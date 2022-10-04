@@ -1,11 +1,11 @@
 import pyttsx3
 from book import Book
 engine = pyttsx3.init()
-for i,voice in enumerate(engine.getProperty('voices')):
-    engine.setProperty('voice', voice.id)
-    engine.say("Welcome to The India Way")
-    print(f"{voice.id} {voice.name} {str(i)}")
-    engine.runAndWait()
+# for i,voice in enumerate(engine.getProperty('voices')):
+#     engine.setProperty('voice', voice.id)
+#     engine.say("Welcome to The India Way")
+#     print(f"{voice.id} {voice.name} {str(i)}")
+#     engine.runAndWait()
     
 
 # voice = engine.getProperty('voices')[7]
