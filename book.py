@@ -1,6 +1,9 @@
 import PyPDF2
 
 class Book:
+    """
+    Class to extract book pages
+    """
     def __init__(self,name:str) -> None:
         """name is the name of the pdf file"""
         pdfFile = open(name, 'rb')
