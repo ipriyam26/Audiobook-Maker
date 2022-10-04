@@ -38,10 +38,11 @@ engine = pyttsx3.init()
 
 book = Book("the-india-way.pdf")
 engine.setProperty("voice", engine.getProperty("voices")[20].id)
-for i in range(book.first_page, book.page):
-    engine.say(book.get_page(i))
+for i in range(book.first_page, 20):
+    # engine.say_to(book.get_page(i))
+    engine.save_to_file(book.get_page(i), f"test{i}.mp3")
     engine.runAndWait()
-    break
+    # break
 # for i,voice in enumerate(engine.getProperty('voices')):
 #     engine.setProperty('voice', voice.id)
 #     engine.say("Welcome to The India Way")
