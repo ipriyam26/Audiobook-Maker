@@ -37,7 +37,7 @@ class Book:
 engine = pyttsx3.init()
 
 book = Book("the-india-way.pdf")
-engine.setProperty("voice", engine.getProperty("voices")[33].id)
+engine.setProperty("voice", engine.getProperty("voices")[32].id)
 for i in range(book.first_page, book.page):
     engine.say(book.get_page(i))
     engine.runAndWait()
