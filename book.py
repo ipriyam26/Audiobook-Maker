@@ -1,15 +1,5 @@
 import PyPDF2
-# pdfFile = open('the-india-way.pdf', 'rb')
-# pdfReader = PyPDF2.PdfFileReader(pdfFile)
-# print(pdfReader.numPages)
-# # for i in range(10,pdfReader.numPages):
-# #     pageObj = pdfReader.getPage(i)
-# #     if pageObj.extractText().strip():
-# #         print(len(pageObj.extractText()))
-# #         print(pageObj.extractText().replace("     "," "))
-# #         break
-# hold = pdfReader.getPage(10).extractText().replace("\t"," ")
-# print(hold)
+
 class Book:
     def __init__(self,name:str) -> None:
         """name is the name of the pdf file"""
