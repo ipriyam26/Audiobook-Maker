@@ -9,6 +9,7 @@ class Book:
         pdfFile = open(name, 'rb')
         self.pdfReader = PyPDF2.PdfFileReader(pdfFile)
         self.page = self.pdfReader.numPages
+        self.first_page = self.first_page_with_text()
     
     def get_page(self,page:int) -> str:
         return self.pdfReader.getPage(page).extractText().replace("\t"," ")
