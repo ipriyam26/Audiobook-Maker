@@ -6,7 +6,7 @@ engine = pyttsx3.init()
 #     engine.say("Welcome to The India Way")
 #     print(f"{voice.id} {voice.name} {str(i)}")
 #     engine.runAndWait()
-    
+Book("the-india-way.pdf").extract_book()
 
 # voice = engine.getProperty('voices')[7]
 # engine.setProperty('voice', voice.id)``
