@@ -1,6 +1,5 @@
 import pyttsx3
 
-engine = pyttsx3.init()
 
 import PyPDF2
 
@@ -35,8 +34,10 @@ class Book:
         return "".join(self.get_page(i) for i in range(first_page, self.page))
 
 
+engine = pyttsx3.init()
+
 book = Book("the-india-way.pdf")
-engine.setProperty("voices", "com.apple.speech.synthesis.voice.rishi")
+engine.setProperty("voices", engine.getProperty("voices")[33].id)
 for i in range(book.first_page, book.page):
     engine.say(book.get_page(i))
     engine.runAndWait()
